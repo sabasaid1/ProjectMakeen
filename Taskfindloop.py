@@ -10,7 +10,6 @@ while (n<=10) :
 ##Q2
         
 print("####")
-import math
 s=0
 while (s <= 10) :
     print (s,s**2)
