@@ -7,7 +7,7 @@ for i in range(a):
         print("[]",end="")
     print()
 ''' 
-###########
+############
 '''str1 =("hello")
 
 for i in str1:
