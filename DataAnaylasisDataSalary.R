@@ -24,7 +24,7 @@ boxplot(data1$Salary ~ data1$Gender,col="pink",horizontal = TRUE)
 
 #
 data2$Experience= data2$`Years of Experience`
-
+#complete. obs means that rows that contain a missing value (NA) are ignored
 attach(data2)
 View(data2)
 plot(data2$Experience,data2$Salary)
@@ -35,6 +35,7 @@ model01=lm(data2$Experience~data2$Salary)
 newdata <- na.omit(data2)
 cor(newdata$Experience,newdata$Salary,use = "complete.obs")
 model01=lm(newdata$Experience~newdata$Salary)
+#abline() can be used to add vertical, horizontal or regression lines to a graph
 abline(model01)
 
 table(newdata$Gender)
